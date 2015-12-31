@@ -20,17 +20,24 @@ gem 'masonry-rails', '~> 0.2.4'
 gem "letter_opener"
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug'
-  gem 'thin'
+  gem 'byebug'  
 end
 
 group :development do
+  gem 'thin'  
   gem 'sqlite3'
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'
   
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
-  gem 'sdoc', '~> 0.4.0', group: :doc  
+
+  gem 'capistrano', '~> 3.4.0'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  gem 'capistrano-passenger'
+  # gem 'capistrano-rbenv'  
+  gem 'capistrano-rvm'  
 end
 
+gem 'sdoc', '~> 0.4.0', group: :doc  
