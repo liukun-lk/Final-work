@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'welcome/', to: 'welcome#index'
   get '/newmail', to: 'welcome#new'
 
-  root 'welcome#index'
+  root 'projects#index'
 
   resources :projects do
     member do

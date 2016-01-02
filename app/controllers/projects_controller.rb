@@ -48,7 +48,7 @@ class ProjectsController < ApplicationController
     @project.destroy
     dir = @project.user.stuId
     if system("rm -rf ./public/demo/#{dir}")
-      redirect_to project_path
+      redirect_to projects_path
     end
   end
 

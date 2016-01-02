@@ -17,6 +17,9 @@
       <ul>
         <%= content_tag :li, current_user.email %>
         <li>
+          <%= link_to('上传规范', welcome_path, class: 'cd-signin') %>
+        </li>
+        <li>
           <%= link_to('上传', new_project_path, class: 'cd-signin') %>
         </li>
         <li>
@@ -28,7 +31,7 @@
 </header>
 <div class="navbar-brand">
   <span style="height: 80px;line-height: 80px;overflow: hidden;margin-left: 80px;top:0;font-size: 40px;font-family:'KaiTi';position: absolute;">
-    <%= link_to "期末作业评测", root_path, style: 'color: white;' %>
+    <%= link_to "期末作业评测", projects_path, style: 'color: white;' %>
   </span>
 </div>
 <div class="container">
