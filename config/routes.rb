@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
 
-  get 'welcome/index'
+  get 'welcome/', to: 'welcome#index'
+  get '/newmail', to: 'welcome#new'
 
-  root 'projects#index'
+  root 'welcome#index'
+
   resources :projects do
     member do
       put 'like', to: 'projects#upvote'

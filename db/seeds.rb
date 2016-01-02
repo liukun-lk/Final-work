@@ -12,3 +12,10 @@
 #      u.passw = f.system
 # u.save
 # end
+u = User.new()
+u.email = "Fee1Mix@163.com"
+u.stuName = "刘昆"
+u.stuId = "13108319"
+u.password = u.stuId
+u.password_confirmation = u.stuId
+u.save
