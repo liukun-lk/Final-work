@@ -46,7 +46,10 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project.destroy
-    redirect_to root_path
+    dir = @project.user.stuId
+    if system("rm -rf ./public/demo/#{dir}")
+      redirect_to root_path
+    end
   end
 
   def upvote
