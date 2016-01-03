@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  get 'welcome/', to: 'welcome#index'
+  get '/welcome', to: 'welcome#index'
   get '/newmail', to: 'welcome#new'
 
   root 'projects#index'

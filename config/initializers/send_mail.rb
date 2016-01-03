@@ -1,14 +1,15 @@
 ActionMailer::Base.smtp_settings = {
-    :address              => "smtp.qq.com",
+    :address              => 'smtp.qq.com',
     :port                 => 25,
-    :domain               => "qq.com",
-    :user_name            => ENV['ADMIN_EMAIL'],
-    :password             => ENV['ADMIN_PASSWORD'],
+    :domain               => 'qq.com',
+    :user_name            => '553815182@qq.com',
+    :password             => 'apwsvoiqferbbajh',
     :authentication       => "plain",
-    :enable_starttls_auto => true,
+    :enable_starttls_auto => true
     #  https://github.com/rails/rails/issues/892
-    #  :openssl_verify_mode  => 'none'
+    #   :openssl_verify_mode  => 'none',
 }
+
 ActionMailer::Base.default_url_options[:host] = "localhost:3000"
 # use letter_opener gem for devlopment
 require "development_mail_interceptor"
