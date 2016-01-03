@@ -1,16 +1,16 @@
-<h2>Forgot your password?</h2>
+<div class="cd-user-modal-container">
 
-<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
-  <%= devise_error_messages! %>
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post, class: 'cd-form' }) do |f| %>
+    <%= devise_error_messages! %>
 
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
-  </div>
+    <h2>修改密码</h2>
+    <div class="fieldset">
+      <%= f.email_field :email, autofocus: true, placeholder: 'Email', class: 'full-width has-padding has-border' %>
+    </div>
 
-  <div class="actions">
-    <%= f.submit "Send me reset password instructions" %>
-  </div>
-<% end %>
+    <div class="fieldset">
+      <%= f.submit "修改密码", class: 'full-width has-padding has-border' %>
+    </div>
+  <% end %>
 
-<%= render "devise/shared/links" %>
+</div>
