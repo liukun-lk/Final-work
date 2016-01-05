@@ -130,7 +130,7 @@
     <orderEntry type="library" scope="PROVIDED" name="acts_as_votable (v0.10.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="addressable (v2.4.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="arel (v6.0.3, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v6.2.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="autoprefixer-rails (v6.2.3, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bcrypt (v3.1.10, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="binding_of_caller (v0.7.2, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="bootstrap-sass (v3.3.6, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
@@ -144,7 +144,7 @@
     <orderEntry type="library" scope="PROVIDED" name="capistrano-rvm (v0.1.2, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="climate_control (v0.0.3, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="cocaine (v0.5.8, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="coffee-rails (v4.1.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.4.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="coffee-script-source (v1.10.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="concurrent-ruby (v1.0.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
@@ -156,7 +156,7 @@
     <orderEntry type="library" scope="PROVIDED" name="execjs (v2.6.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="globalid (v0.3.6, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v0.7.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.3.2, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="jbuilder (v2.4.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="jquery-rails (v4.0.5, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="launchy (v2.4.3, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="letter_opener (v1.4.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
@@ -183,14 +183,13 @@
     <orderEntry type="library" scope="PROVIDED" name="rails-html-sanitizer (v1.0.2, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="railties (v4.2.5, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v10.4.2, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rdoc (v4.2.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ref (v2.0.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="responders (v2.1.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="responders (v2.1.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass (v3.4.20, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sass-rails (v5.0.4, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sdoc (v0.4.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="simple_form (v3.2.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="spring (v1.6.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="spring (v1.6.1, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets (v3.5.2, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sprockets-rails (v3.0.0, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="sqlite3 (v1.3.11, RVM: ruby-2.3.0 [final_work]) [gem]" level="application" />

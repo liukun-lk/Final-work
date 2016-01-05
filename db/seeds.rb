@@ -5,17 +5,24 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
-# csv.open |f| do
-#
-#  u = User.new();
-#  u.name =
-#      u.passw = f.system
+
+require 'csv'
+# u = User.new()
+# u.email = "Fee1Mix@163.com"
+# u.stuName = "刘昆"
+# u.stuId = "13108319"
+# u.password = u.stuId
+# u.password_confirmation = u.stuId
 # u.save
-# end
-u = User.new()
-u.email = "Fee1Mix@163.com"
-u.stuName = "刘昆"
-u.stuId = "13108319"
-u.password = u.stuId
-u.password_confirmation = u.stuId
-u.save
+rows = CSV.read('./db/test.csv', 'rb:GB18030:UTF-8', headers: true, header_converters: :symbol, col_sep: ',' )
+rows.each do |row|
+  u = User.new
+  u.stuId = row[1]
+  u.stuName = row[2]
+  random = Random.new.rand(11111111..99999999).to_s
+  u.randomPass = random
+  u.password = random
+  u.password_confirmation = random
+  u.email = row[3]
+  u.save
+end
