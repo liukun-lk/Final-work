@@ -11,6 +11,6 @@ class Project < ActiveRecord::Base
   validates_attachment_content_type :image, content_type: /\Aimage\/.*\Z/
 
   has_attached_file :zip
-  validates_attachment_content_type :zip, content_type: ['application/zip', 'application/x-zip']
-
+  validates_attachment_content_type :zip, content_type: ['application/zip', 'application/x-zip','application/octet-stream','application/x-zip-compressed']
+  validates_attachment_size :zip, less_than: 10.megabyte
 end
