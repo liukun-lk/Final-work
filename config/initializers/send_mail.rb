@@ -12,7 +12,7 @@ ActionMailer::Base.smtp_settings = {
     #   :openssl_verify_mode  => 'none',
 }
 
-#ActionMailer::Base.default_url_options[:host] = "localhost:3000"
+ActionMailer::Base.default_url_options[:host] = "121.42.198.160"
 # use letter_opener gem for devlopment
 require "development_mail_interceptor"
 Mail.register_interceptor(DevelopmentMailInterceptor) if Rails.env.development?
