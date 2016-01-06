@@ -21,8 +21,10 @@
                   <%= @project.get_upvotes.size %>
                 </span>
               <% end %>
-              <% if @project.user.email==current_user.email %>
-                <%= link_to 'delete', project_path, method: :delete, data: { confirm: "Are you sure?"}, class: 'btn btn-default' %>
+              <% if user_signed_in? %>
+                <% if @project.user.email == current_user.email %>
+                  <%= link_to 'delete', project_path, method: :delete, data: { confirm: "Are you sure?"}, class: 'btn btn-default' %>
+                <% end %>
               <% end %>
             </div>
           </div>
@@ -31,8 +33,3 @@
     </div>
   </div>
 </div>
-
-
-
-
-

@@ -1,6 +1,5 @@
 class ProjectsController < ApplicationController
   before_action :find_params, only: [:show, :edit, :update, :destroy, :upvote]
-  before_action :authenticate_user!, except: [:index, :show]
 
   def index
     @projects = Project.order(cached_votes_total: :desc)
