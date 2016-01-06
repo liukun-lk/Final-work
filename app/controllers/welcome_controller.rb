@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
 
   end
   def new
-    User.where(id: 16..108).each do |user|
+    User.where(id: 18..108).each do |user|
       CommentMailer.comment_notify_email(user).deliver_later
     end
   end
