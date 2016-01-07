@@ -2,10 +2,10 @@ ActionMailer::Base.smtp_settings = {
     :address              => 'smtp.qq.com',
     :port                 => 25,
     :domain               => 'qq.com',
-    :user_name            => '553815182@qq.com',
-    :password             => 'mzuiskitmcwlbdej',
-    # :user_name            => '892201531@qq.com',
-    # :password             => 'ycvofuidkpdvbcbd',
+    # :user_name            => '553815182@qq.com',
+    # :password             => 'mzuiskitmcwlbdej',
+    :user_name            => '892201531@qq.com',
+    :password             => 'ycvofuidkpdvbcbd',
     :authentication       => "plain",
     :enable_starttls_auto => true
     #  https://github.com/rails/rails/issues/892
