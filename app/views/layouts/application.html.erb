@@ -11,6 +11,9 @@
   <nav class="main-nav">
     <% unless user_signed_in? %>
       <ul>
+        <li>
+          <%= link_to('上传规范', welcome_path, class: 'cd-signin') %>
+        </li>
         <li><a class="cd-signin" href="/users/sign_in">登录</a></li>
       </ul>
     <% else %>

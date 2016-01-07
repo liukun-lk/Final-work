@@ -4,9 +4,11 @@
   <% end %>
   <%= yield %>
 </div>
+
 <div class="contact">
   <h2>作品提交</h2>
   <p>请在下方提交作业的相关信息，若多次提交，则以最后一次提交信息为准</p>
+
   <%= simple_form_for @project, html: { multipart: true } do |f| %>
     <h3>作品名称</h3>
     <%= f.input :title, label: false, input_html: { class: 'fileName' }, error_html: { class: 'error'} %>
@@ -31,7 +33,11 @@
     <%= f.submit "提交" %>
   <% end %>
 
-  <div>
-    <%= link_to '回到首页', projects_path %>
+  <br/>
+
+  <div class="btn-group">
+    <button class="btn btn-default">
+      <%= link_to '回到首页', projects_path %>
+    </button>
   </div>
 </div>

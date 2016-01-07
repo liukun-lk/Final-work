@@ -2,8 +2,8 @@ class ProjectsController < ApplicationController
   before_action :find_params, only: [:show, :edit, :update, :destroy, :upvote]
 
   def index
-    @projects = Project.order(cached_votes_total: :desc)
-    @perfect = Project.order(cached_votes_total: :desc).take(4)
+    @projects = Project.order(cached_votes_total: :desc).paginate(page: params[:page]).per_page(1)
+    @perfect = Project.order(cached_votes_total: :desc).take(5)
   end
 
   def show
@@ -33,6 +33,10 @@ class ProjectsController < ApplicationController
   end
 
   def edit
+    path = @project.zip.path
+    dir = @project.user.stuId
+    system "rm -rf ./public/demo/#{dir}"
+    system "rm -f #{path}"
   end
 
   def update

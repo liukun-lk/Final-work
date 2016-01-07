@@ -5,11 +5,13 @@
         <h2>Edit</h2>
       </div>
       <div class="panel-body">
-        <%= image_tag @project.image.url(:medium), class: 'center-block' %>
-        <%= render 'form' %>
+        <%= simple_form_for @project, html: { multipart: true } do |f| %>
+          <h4>压缩包上传：</h4>
+          <%= f.input :zip, label: false, error_html: { class: 'error' } %>
+        <% end %>
       </div>
       <div class="panel-footer">
-        <%= link_to 'Cancel', project_path %>
+        <button class="btn btn-default"><%= link_to 'Cancel', project_path %></button>
       </div>
     </div>
   </div>

@@ -12,6 +12,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'therubyracer',  platforms: :ruby
 
+gem 'will_paginate', '~> 3.0.6'
+gem 'will_paginate-bootstrap'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'bootstrap-sass', '~> 3.3.6'
 gem "paperclip", "~> 4.3"
@@ -40,4 +42,4 @@ group :development do
   gem 'capistrano-rvm'  
 end
 
-gem 'sdoc', '~> 0.4.0', group: :doc  
+gem 'sdoc', '~> 0.4.0', group: :doc

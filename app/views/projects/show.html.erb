@@ -1,18 +1,24 @@
 <div class="row">
   <div class="col-md-8 col-md-offset-2">
     <div class="panel panel-default">
-      <div class="panel-body">
+      <div class="panel-body ">
         <%= image_tag @project.image.url, class: 'center-block' %>
-        <h4>作品名称：<%= @project.title %></h4>
-        <p>作品介绍：<%= @project.description %></p>
-        <h5>点击进入主页：<%= link_to "#{@project.user.stuId}", "/demo/#{@project.user.stuId}/#{@project.user.stuId}/index.html", target: "_blank" %></h5>
+        <div class="col-md-8 col-md-offset-2">
+          <h4>作品名称：<%= @project.title %></h4>
+          <p>作品介绍：<%= @project.description %></p>
+          <span>作者：</span>
+          <%= @project.user.stuId %>
+          <%= @project.user.stuName %>
+        </div>
       </div>
       <div class="panel-footer">
         <div class="row">
           <div class="col-md-6">
-            <span>作者：</span>
-            <%= @project.user.stuId %>
-            <%= @project.user.stuName %>
+            <h5>
+              <span class="glyphicon glyphicon-home">
+                <%= link_to "进入主页", "/demo/#{@project.user.stuId}/#{@project.user.stuId}/index.html", target: "_blank" %>
+              </span>
+            </h5>
           </div>
           <div class="col-md-6">
             <div class="btn-group pull-right">
@@ -23,7 +29,8 @@
               <% end %>
               <% if user_signed_in? %>
                 <% if @project.user.email == current_user.email %>
-                  <%= link_to 'delete', project_path, method: :delete, data: { confirm: "Are you sure?"}, class: 'btn btn-default' %>
+                  <%= link_to content_tag(:span, " 修改文件", class: "glyphicon glyphicon-upload"), edit_project_path, data: { confirm: "确认后将会删除原来的文件，「进入主页」内部的内容将会被删除，需要重新上传才能有效。" }, class: 'btn btn-default' %>
+                  <%= link_to content_tag(:span, " 删除", class: "glyphicon glyphicon-trash"), project_path, method: :delete, data: { confirm: "确定要删除该项目？"}, class: 'btn btn-default' %>
                 <% end %>
               <% end %>
             </div>
