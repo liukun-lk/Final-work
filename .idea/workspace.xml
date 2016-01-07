@@ -66,7 +66,17 @@
         <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.110946745" vertical-offset="0" max-vertical-offset="676">
-              <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+              <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="routes.rb" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/routes.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -352,7 +362,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="git&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/.gitignore&#10;route&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/routes.rb&#10;gem&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/Gemfile&#10;send&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/initializers/send_mail.rb&#10;seed&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/db/seeds.rb&#10;develo&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/environments/development.rb&#10;sec&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/secrets.yml&#10;welcome&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/controllers/welcome_controller.rb&#10;index&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/views/welcome/index.html.erb&#10;application&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/views/layouts/application.html.erb&#10;appli&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/application.rb&#10;rout&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/routes.rb&#10;wel&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/controllers/welcome_controller.rb&#10;pro&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/controllers/projects_controller.rb&#10;data&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/database.yml&#10;gemfile&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/Gemfile&#10;proje&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/controllers/projects_controller.rb&#10;new.html&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views/projects/new.html.erb&#10;for&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views/projects/_form.html.erb&#10;show&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views/project/show.html.erb&#10;ro&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/config/routes.rb&#10;routes&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/config/routes.rb&#10;config/app&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/config/application.rb&#10;Gemfile&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/Gemfile&#10;view/&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views" />
+    <property name="SearchEverywhereHistoryKey" value="route&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/routes.rb&#10;git&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/.gitignore&#10;gem&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/Gemfile&#10;send&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/initializers/send_mail.rb&#10;seed&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/db/seeds.rb&#10;develo&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/environments/development.rb&#10;sec&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/secrets.yml&#10;welcome&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/controllers/welcome_controller.rb&#10;index&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/views/welcome/index.html.erb&#10;application&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/views/layouts/application.html.erb&#10;appli&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/application.rb&#10;rout&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/routes.rb&#10;wel&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/controllers/welcome_controller.rb&#10;pro&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/app/controllers/projects_controller.rb&#10;data&#9;FILE&#9;file:///Users/liukun/Desktop/Final-work/config/database.yml&#10;gemfile&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/Gemfile&#10;proje&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/controllers/projects_controller.rb&#10;new.html&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views/projects/new.html.erb&#10;for&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views/projects/_form.html.erb&#10;show&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views/project/show.html.erb&#10;ro&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/config/routes.rb&#10;routes&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/config/routes.rb&#10;config/app&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/config/application.rb&#10;Gemfile&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/Gemfile&#10;view/&#9;FILE&#9;file:///Users/liukun/Desktop/devise_demo/app/views" />
     <property name="options.lastSelected" value="preferences.sourceCode" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -854,14 +864,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1331361" vertical-offset="0" max-vertical-offset="1125">
-          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/initializers/inflections.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="676">
@@ -974,10 +976,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1125">
+          <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/welcome_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.110946745" vertical-offset="0" max-vertical-offset="676">
-          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <caret line="5" column="3" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
           <folding />
         </state>
       </provider>
