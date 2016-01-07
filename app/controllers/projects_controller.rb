@@ -2,7 +2,7 @@ class ProjectsController < ApplicationController
   before_action :find_params, only: [:show, :edit, :update, :destroy, :upvote]
 
   def index
-    @projects = Project.order(cached_votes_total: :desc).paginate(page: params[:page]).per_page(1)
+    @projects = Project.order(cached_votes_total: :desc).paginate(page: params[:page]).per_page(10)
     @perfect = Project.order(cached_votes_total: :desc).take(5)
   end
 
