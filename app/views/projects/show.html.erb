@@ -29,7 +29,6 @@
               <% end %>
               <% if user_signed_in? %>
                 <% if @project.user.email == current_user.email %>
-                  <%= link_to content_tag(:span, " 修改文件", class: "glyphicon glyphicon-upload"), edit_project_path, data: { confirm: "确认后将会删除原来的文件，「进入主页」内部的内容将会被删除，需要重新上传才能有效。" }, class: 'btn btn-default' %>
                   <%= link_to content_tag(:span, " 删除", class: "glyphicon glyphicon-trash"), project_path, method: :delete, data: { confirm: "确定要删除该项目？"}, class: 'btn btn-default' %>
                 <% end %>
               <% end %>

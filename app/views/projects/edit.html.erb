@@ -8,10 +8,11 @@
         <%= simple_form_for @project, html: { multipart: true } do |f| %>
           <h4>压缩包上传：</h4>
           <%= f.input :zip, label: false, error_html: { class: 'error' } %>
+          <%= f.submit "提交", class: 'btn btn-default' %>
         <% end %>
       </div>
       <div class="panel-footer">
-        <button class="btn btn-default"><%= link_to 'Cancel', project_path %></button>
+        <button class="btn btn-default"><%= link_to '取消', project_path %></button>
       </div>
     </div>
   </div>
