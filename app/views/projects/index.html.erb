@@ -10,15 +10,6 @@
     });
   }).call(this);
 </script>
-<script>
-  var slider = new IdealImageSlider.Slider({
-    selector: '#slider',
-    height: 400, // Required but can be set by CSS
-    interval: 4000
-  });
-  //slider.addCaptions();
-  slider.start();
-</script>
 
 <div id="slider">
   <% @perfect.each do |per| %>
@@ -53,7 +44,15 @@
   <%= will_paginate @projects, renderer: BootstrapPagination::Rails, class: 'paginate', previous_label: h("previous"), next_label: h("next") %>
 </center>
 
-
+<script>
+  var slider = new IdealImageSlider.Slider({
+    selector: '#slider',
+    height: 400, // Required but can be set by CSS
+    interval: 4000
+  });
+  //slider.addCaptions();
+  slider.start();
+</script>
 
 
 
