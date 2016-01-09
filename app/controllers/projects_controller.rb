@@ -33,10 +33,7 @@ class ProjectsController < ApplicationController
   end
 
   def edit
-    path = @project.zip.path
-    dir = @project.user.stuId
-    system "rm -rf ./public/demo/#{dir}"
-    system "rm -f #{path}"
+
   end
 
   def update
