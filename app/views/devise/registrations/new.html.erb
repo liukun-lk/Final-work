@@ -15,6 +15,14 @@
     </div>
 
     <div class="fieldset">
+      <%= f.text_field :stuId, autofocus: true, placeholder: 'student-number', class: 'full-width has-padding has-border' %>
+    </div>
+
+    <div class="fieldset">
+      <%= f.text_field :stuName, autofocus: true, placeholder: 'student-name', class: 'full-width has-padding has-border' %>
+    </div>
+
+    <div class="fieldset">
       <%= f.submit "Sign up", class: 'full-width has-padding' %>
     </div>
   <% end %>
