@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="Rails devise_demo: development" uuid="2e5f18b0-90c3-4ff1-9eb6-b87e35ff4a6e" />
+    <data-source name="Rails devise_demo: test" uuid="de4a2021-4714-4436-8b2b-f7ab02c7c615" />
+    <data-source name="Rails devise_demo: development" uuid="adec8110-a2c4-4d0d-bc26-9906e01586f6">
+      <first-sync>true</first-sync>
+    </data-source>
+    <data-source name="Rails devise_demo: test" uuid="8115fb49-cba7-4850-b8f8-d90880ff978b">
+      <first-sync>true</first-sync>
+    </data-source>
+  </component>
+</project>

@@ -2,10 +2,8 @@ ActionMailer::Base.smtp_settings = {
     :address              => 'smtp.163.com',
     :port                 => 25,
     :domain               => '163.com',
-    # :user_name            => '553815182@qq.com',
-    # :password             => 'mzuiskitmcwlbdej',
     :user_name            => 'Fee1Mix@163.com',
-    :password             => 'Wanghaozqqxpp24',
+    :password             => ENV['PASSWORD'],
     :authentication       => :login,
     :enable_starttls_auto => true
     #  https://github.com/rails/rails/issues/892
