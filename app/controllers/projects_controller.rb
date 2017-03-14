@@ -2,9 +2,8 @@ class ProjectsController < ApplicationController
   before_action :find_params, only: [:show, :edit, :update, :destroy, :upvote]
 
   def index
-    desc_projects = Project.order(cached_votes_total: :desc)
-    @projects = desc_projects.paginate(page: params[:page]).per_page(10)
-    @perfect = desc_projects.take(5)
+    @projects = Project.includes(:user).order(cached_votes_total: :desc).paginate(page: params[:page]).per_page(10)
+    @perfect = Project.order(cached_votes_total: :desc).first(5)
   end
 
   def show
