@@ -24,7 +24,7 @@
             <div class="btn-group pull-right">
               <%= link_to like_project_path(@project), method: :put, class: 'btn btn-default' do %>
                 <span class="glyphicon glyphicon-heart">
-                  <%= @project.get_upvotes.size %>
+                  <%= @project.cached_votes_up %>
                 </span>
               <% end %>
               <% if user_signed_in? %>
