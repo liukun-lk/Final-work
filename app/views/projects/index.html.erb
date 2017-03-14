@@ -20,7 +20,7 @@
 <div id="projects" class="transitions-enabled">
   <% @projects.each do |project| %>
     <div class="box panel panel-default">
-      <%= link_to (image_tag project.image.url), project %>
+      <%= link_to (image_tag project.image.url(:medium)), project %>
       <div class="panel-body">
         <h3><%= link_to project.title, project %></h3>
         <p class="user">
