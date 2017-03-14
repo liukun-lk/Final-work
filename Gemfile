@@ -10,7 +10,7 @@ gem 'devise', '>= 3.5.4'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'therubyracer',  platforms: :ruby
+# gem 'therubyracer',  platforms: :ruby
 
 gem 'will_paginate', '~> 3.0.6'
 gem 'will_paginate-bootstrap'
