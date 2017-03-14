@@ -40,6 +40,7 @@ group :development do
   gem 'capistrano-passenger'
   # gem 'capistrano-rbenv'
   gem 'capistrano-rvm'
+  gem 'bullet'
 end
 
 gem 'sdoc', '~> 0.4.0', group: :doc
