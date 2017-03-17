@@ -19,3 +19,4 @@ config/secrets.yml
 config/environments/*
 .byebug_history
 /public
+/config/*.yml
