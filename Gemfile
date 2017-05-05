@@ -46,5 +46,5 @@ end
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem "rubycritic", :require => false
 gem 'rubocop', require: false
-gem 'nokogiri', '>= 1.6.8'
+gem 'nokogiri', '>= 1.7.1'
 gem 'rails-html-sanitizer', '~> 1.0.3'
