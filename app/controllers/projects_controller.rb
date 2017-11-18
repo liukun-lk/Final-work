@@ -1,7 +1,7 @@
 class ProjectsController < ApplicationController
-  before_action :find_params, only: [:show, :upvote]
-  before_action :authenticate_user!, only: %i(new create edit update destroy upvote)
-  before_action :own_project, only: [:edit, :update, :destroy]
+  before_action :find_params, only: %i[show upvote]
+  before_action :authenticate_user!, only: %i[new create edit update destroy upvote]
+  before_action :own_project, only: %i[edit update destroy]
 
   def index
     @projects = Project.includes(:user).order(cached_votes_total: :desc).paginate(page: page).per_page(per)
