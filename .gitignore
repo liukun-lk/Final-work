@@ -14,9 +14,9 @@
 # Ignore all logfiles and tempfiles.
 /log/*.log
 /tmp
-config/database.yml
-config/secrets.yml
-config/environments/*
+/config/database.yml
+/config/secrets.yml
+/config/environments/*
 .byebug_history
 /public
 /config/*.yml
