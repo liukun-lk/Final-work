@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'final-work'
-set :repo_url, 'https://github.com/HDUReactTeam/Final-work'
+set :repo_url, 'https://github.com/liukun-lk/Final-work'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
