@@ -6,8 +6,7 @@ class ProjectsController < ApplicationController
     @perfect = Project.order(cached_votes_total: :desc).first(5)
   end
 
-  def show
-  end
+  def show; end
 
   def new
     @project = current_user.projects.build
@@ -21,24 +20,22 @@ class ProjectsController < ApplicationController
       path = @project.zip.path
       dir = @project.user.stuId
       if system("mkdir -p ./public/demo/#{dir}") && system("unzip -o #{path} -d ./public/demo/#{dir}")
-        redirect_to @project, notice: "文件上传成功。"
+        redirect_to @project, notice: '文件上传成功。'
       else
-        @project.errors[:zip] = "文件上传失败。"
+        @project.errors[:zip] = '文件上传失败。'
         render 'new', layout: false
       end
     else
-      @project.errors[:base] = "文件上传失败。"
+      @project.errors[:base] = '文件上传失败。'
       render :new, layout: false
     end
   end
 
-  def edit
-
-  end
+  def edit; end
 
   def update
     if @project.update(project_params)
-      redirect_to project_path, notice: "修改完成"
+      redirect_to project_path, notice: '修改完成'
     else
       render 'edit'
     end
@@ -47,9 +44,7 @@ class ProjectsController < ApplicationController
   def destroy
     @project.destroy
     dir = @project.user.stuId
-    if system("rm -rf ./public/demo/#{dir}")
-      redirect_to projects_path
-    end
+    redirect_to projects_path if system("rm -rf ./public/demo/#{dir}")
   end
 
   def upvote

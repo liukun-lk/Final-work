@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   get '/welcome', to: 'welcome#index'
   get '/newmail', to: 'welcome#new'
 
@@ -16,7 +15,6 @@ Rails.application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
