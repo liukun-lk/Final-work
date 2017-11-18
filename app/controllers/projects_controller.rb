@@ -1,8 +1,10 @@
 class ProjectsController < ApplicationController
-  before_action :find_params, only: [:show, :edit, :update, :destroy, :upvote]
+  before_action :find_params, only: [:show, :upvote]
+  before_action :authenticate_user!, only: %i(new create edit update destroy upvote)
+  before_action :own_project, only: [:edit, :update, :destroy]
 
   def index
-    @projects = Project.includes(:user).order(cached_votes_total: :desc).paginate(page: params[:page]).per_page(10)
+    @projects = Project.includes(:user).order(cached_votes_total: :desc).paginate(page: page).per_page(per)
     @perfect = Project.order(cached_votes_total: :desc).first(5)
   end
 
@@ -60,5 +62,9 @@ class ProjectsController < ApplicationController
 
   def find_params
     @project = Project.find(params[:id])
+  end
+
+  def own_project
+    @project = current_user.projects.find(params[:id])
   end
 end
