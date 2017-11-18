@@ -42,7 +42,7 @@ group :development do
   gem 'capistrano-rvm'
 end
 
-gem 'nokogiri', '>= 1.7.1'
+gem 'nokogiri', '>= 1.8.1'
 gem 'rails-html-sanitizer', '~> 1.0.3'
 gem 'rubocop', require: false
 gem 'rubycritic', require: false
