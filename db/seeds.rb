@@ -17,10 +17,10 @@ require 'csv'
 rows = CSV.read('./db/test.csv', 'rb:GB18030:UTF-8', headers: true, header_converters: :symbol, col_sep: ',' )
 rows.each do |row|
   u = User.new
-  u.stuId = row[1]
-  u.stuName = row[2]
+  u.stu_id = row[1]
+  u.stu_iame = row[2]
   random = Random.new.rand(11111111..99999999).to_s
-  u.randomPass = random
+  u.random_pass = random
   u.password = random
   u.password_confirmation = random
   u.email = row[3]

@@ -7,8 +7,8 @@
           <h4>作品名称：<%= @project.title %></h4>
           <p>作品介绍：<%= @project.description %></p>
           <span>作者：</span>
-          <%= @project.user.stuId %>
-          <%= @project.user.stuName %>
+          <%= @project.user.stu_id %>
+          <%= @project.user.stu_name %>
         </div>
       </div>
       <div class="panel-footer">
@@ -16,7 +16,7 @@
           <div class="col-md-6">
             <h5>
               <span class="glyphicon glyphicon-home">
-                <%= link_to "进入主页", "/demo/#{@project.user.stuId}/#{@project.user.stuId}/index.html", target: "_blank" %>
+                <%= link_to "进入主页", "/demo/#{@project.user.stu_id}/#{@project.user.stu_id}/index.html", target: "_blank" %>
               </span>
             </h5>
           </div>

@@ -25,7 +25,7 @@
         <h3><%= link_to project.title, project %></h3>
         <p class="user">
           <h5 class="pull-left">
-            上传者：<%= project.user.stuName %>
+            上传者：<%= project.user.stu_name %>
           </h5>
           <span>
             <%= link_to like_project_path(project), method: :put, class: 'btn btn-default pull-right' do %>

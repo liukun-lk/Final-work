@@ -18,7 +18,7 @@ class ProjectsController < ApplicationController
 
     if @project.save
       path = @project.zip.path
-      dir = @project.user.stuId
+      dir = @project.user.stu_id
       if system("mkdir -p ./public/demo/#{dir}") && system("unzip -o #{path} -d ./public/demo/#{dir}")
         redirect_to @project, notice: '文件上传成功。'
       else
@@ -43,7 +43,7 @@ class ProjectsController < ApplicationController
 
   def destroy
     @project.destroy
-    dir = @project.user.stuId
+    dir = @project.user.stu_id
     redirect_to projects_path if system("rm -rf ./public/demo/#{dir}")
   end
 
