@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.0'
+lock '3.4.1'
 
 set :application, 'final-work'
 set :repo_url, 'https://github.com/liukun-lk/Final-work'
@@ -8,7 +8,7 @@ set :repo_url, 'https://github.com/liukun-lk/Final-work'
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
 
 # Default deploy_to directory is /var/www/my_app_name
-set :deploy_to, '/www/final-work'
+set :deploy_to, '/var/www/final-work'
 
 # Default value for :scm is :git
 # set :scm, :git
