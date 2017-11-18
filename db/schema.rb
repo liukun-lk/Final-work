@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20171118054542) do
+ActiveRecord::Schema.define(version: 20171118073621) do
 
   create_table "projects", force: :cascade do |t|
     t.string   "title",                   limit: 255
@@ -65,6 +65,7 @@ ActiveRecord::Schema.define(version: 20171118054542) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["stu_id"], name: "index_users_on_stu_id", using: :btree
 
   create_table "votes", force: :cascade do |t|
     t.integer  "votable_id",   limit: 4
