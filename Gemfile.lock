@@ -244,7 +244,7 @@ GEM
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
     sqlite3 (1.3.13)
-    sshkit (1.15.0)
+    sshkit (1.15.1)
       net-scp (>= 1.1.2)
       net-ssh (>= 2.8.0)
     thin (1.7.2)
