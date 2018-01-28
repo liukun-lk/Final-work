@@ -57,7 +57,7 @@ GEM
     bullet (5.7.2)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11.0)
-    byebug (9.1.0)
+    byebug (10.0.0)
     capistrano (3.4.1)
       i18n
       rake (>= 10.0.0)
@@ -136,7 +136,7 @@ GEM
     mimemagic (0.3.0)
     mini_mime (1.0.0)
     mini_portile2 (2.3.0)
-    minitest (5.11.1)
+    minitest (5.11.2)
     multi_json (1.13.1)
     mysql2 (0.4.10)
     net-scp (1.2.1)
