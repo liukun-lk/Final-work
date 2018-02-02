@@ -55,7 +55,7 @@ task :get_passenger_instance_name do
   end
 end
 
-set :passenger_restart_command, ->{ "passenger-config restart-app --instance #{fetch(:passenger_instance_name)}" }
+set :passenger_restart_command, -> { "passenger-config restart-app --instance #{fetch(:passenger_instance_name)}" }
 
 before :deploy, :get_passenger_instance_name
 
