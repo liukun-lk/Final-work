@@ -21,4 +21,9 @@
 /config/environments/*
 .byebug_history
 /public
-/config/*.yml
+/config/*.yml/public/packs
+/public/packs-test
+/node_modules
+yarn-debug.log*
+yarn-error.log*
+.yarn-integrity
