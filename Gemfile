@@ -1,6 +1,8 @@
 source 'https://gems.ruby-china.org'
 
-gem 'rails', '~> 4.2.7.1'
+git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+
+gem 'rails', '5.2.0.rc1'
 
 gem 'devise', '>= 3.5.4'
 gem 'jbuilder', '~> 2.0'
@@ -40,10 +42,8 @@ group :development do
   # gem 'capistrano-rbenv'
   gem 'bullet'
   gem 'capistrano-rvm'
+  gem 'rubocop', require: false
 end
 
 gem 'nokogiri', '>= 1.8.1'
 gem 'rails-html-sanitizer', '~> 1.0.3'
-gem 'rubocop', require: false
-gem 'rubycritic', require: false
-gem 'sdoc', '~> 0.4.0', group: :doc
