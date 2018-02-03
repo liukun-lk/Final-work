@@ -1,9 +1,6 @@
 class Project < ApplicationRecord
   belongs_to :user
-  validates :title, presence: true, allow_blank: false
-  validates :description, presence: true, allow_blank: false
-  validates :image, presence: true, allow_blank: false
-  validates :zip, presence: true, allow_blank: false
+  validates :title, :description, :image, :zip, presence: true, allow_blank: false
 
   acts_as_votable
 
