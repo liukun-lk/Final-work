@@ -1,5 +1,5 @@
 # config valid only for current version of Capistrano
-lock '3.4.1'
+lock '3.10.1'
 
 set :application, 'final-work'
 set :repo_url, 'https://github.com/liukun-lk/Final-work'
