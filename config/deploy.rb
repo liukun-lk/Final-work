@@ -4,7 +4,7 @@ lock '3.4.1'
 set :application, 'final-work'
 set :repo_url, 'https://github.com/liukun-lk/Final-work'
 
-set :rvm_ruby_version, '2.3.0'
+set :rvm_ruby_version, '2.5.0'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
