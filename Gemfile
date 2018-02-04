@@ -40,12 +40,12 @@ group :development do
   gem 'capistrano-passenger'
   gem 'capistrano-rails'
   # gem 'capistrano-rbenv'
-  gem 'bootsnap', require: false
   gem 'bullet'
   gem 'capistrano-rvm'
   gem 'rubocop', require: false
 end
 
+gem 'bootsnap', require: false
 gem 'listen'
 gem 'nokogiri', '>= 1.8.1'
 gem 'rails-html-sanitizer', '~> 1.0.3'
