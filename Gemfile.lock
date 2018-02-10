@@ -49,7 +49,7 @@ GEM
       sshkit (>= 1.6.1, != 1.7.0)
     arel (9.0.0)
     ast (2.4.0)
-    autoprefixer-rails (7.2.5)
+    autoprefixer-rails (7.2.6)
       execjs
     bcrypt (3.1.11)
     binding_of_caller (0.8.0)
