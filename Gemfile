@@ -48,6 +48,6 @@ end
 gem 'bootsnap', require: false
 gem 'listen'
 gem 'nokogiri', '>= 1.8.1'
-gem 'rails-html-sanitizer', '~> 1.0.3'
+gem 'rails-html-sanitizer', '>= 1.0.4'
 # gem 'webpacker', '~> 3.3'
 gem 'loofah', '>= 2.2.1'
