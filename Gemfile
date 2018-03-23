@@ -2,7 +2,7 @@ source 'https://gems.ruby-china.org'
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '5.2.0.rc1'
+gem 'rails', '5.2.0.rc2'
 
 gem 'devise', '>= 3.5.4'
 gem 'jbuilder', '~> 2.0'
@@ -14,13 +14,14 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'acts_as_votable', '~> 0.10.0'
-gem 'bootstrap-sass', '~> 3.3.6'
+# gem 'bootstrap-sass', '~> 3.3.6'
 gem 'letter_opener'
-gem 'masonry-rails', '~> 0.2.4'
+# gem 'masonry-rails', '~> 0.2.4'
 gem 'paperclip', '>= 5.2.0'
-gem 'simple_form', '~> 3.2', '>= 3.2.1'
+gem 'semantic-ui-sass'
+# gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'will_paginate', '~> 3.0.6'
-gem 'will_paginate-bootstrap'
+# gem 'will_paginate-bootstrap'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
