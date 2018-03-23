@@ -2,47 +2,35 @@
 <html>
 <head>
   <title>期末作业展示</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag 'application', media: "all" %>
+  <%= yield :head %>
 </head>
-<body>
+<body class="welcome-page">
 <header role="banner">
-  <nav class="main-nav">
-    <% unless user_signed_in? %>
-      <ul>
-        <li>
-          <%= link_to('上传规范', welcome_path, class: 'cd-signin') %>
-        </li>
-        <li><a class="cd-signin" href="/users/sign_in">登录</a></li>
-      </ul>
-    <% else %>
-      <ul>
-        <%= content_tag :li, current_user.email %>
-        <li>
-          <%= link_to('上传规范', welcome_path, class: 'cd-signin') %>
-        </li>
-        <li>
-          <%= link_to('上传', new_project_path, class: 'cd-signin') %>
-        </li>
-        <li>
-          <%= link_to('退出', destroy_user_session_path, method: :delete, class: 'cd-signin') %>
-        </li>
-      </ul>
-    <% end %>
+  <nav class="ui inverted menu">
+    <div class="container">
+      <div class="left menu">
+        <%= link_to "期末作业评测", projects_path, class: "item title" %>
+      </div>
+      <div class="right menu">
+        <% if user_signed_in? %>
+          <%= content_tag :li, current_user.email %>
+          <%= link_to('上传规范', welcome_path, class: 'item') %>
+          <%= link_to('上传', new_project_path, class: 'item') %>
+          <%= link_to('退出', destroy_user_session_path, method: :delete, class: 'item') %>
+        <% else %>
+          <%= link_to('上传规范', welcome_path, class: 'item') %>
+          <%= link_to('登录', new_user_session_path, class: 'item') %>
+        <% end %>
+      </div>
+    </div>
   </nav>
 </header>
-<div class="navbar-brand">
-  <span style="height: 80px;line-height: 80px;overflow: hidden;margin-left: 80px;top:0;font-size: 40px;font-family:'KaiTi';position: absolute;">
-    <%= link_to "期末作业评测", projects_path, style: 'color: white;' %>
-  </span>
-</div>
-<div class="container">
-  <% flash.each do |name, msg| %>
-    <%= content_tag :div, msg, class: 'alert alert-info' %>
-  <% end %>
-  <%= yield %>
-</div>
+
+<%= yield %>
+
+<%= yield :foot %>
 
 </body>
 </html>

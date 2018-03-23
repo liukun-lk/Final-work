@@ -1,55 +1,46 @@
-<script>
-  (function() {
-    $(function() {
-      return $('#projects').imagesLoaded(function() {
-        return $('#projects').masonry({
-          itemSelector: '.box',
-          isFitWidth: true
-        });
-      });
-    });
-  }).call(this);
-</script>
+<% content_for :head do %>
+  <%= stylesheet_link_tag    'project', media: "all" %>
+<% end %>
 
-<div id="slider">
+<div class="slideshow" style="height:0;margin-top:44px;overflow:hidden">
   <% @perfect.each do |per| %>
-    <%= link_to image_tag(per.image.url), project_path(per.id) %>
+    <%= content_tag(:div, link_to(image_tag(per.image.url), project_path(per.id)), class: 'slide') %>
   <% end %>
 </div>
 
-<div id="projects" class="transitions-enabled">
-  <% @projects.each do |project| %>
-    <div class="box panel panel-default">
-      <%= link_to (image_tag project.image.url(:medium)), project %>
-      <div class="panel-body">
-        <h3><%= link_to project.title, project %></h3>
-        <p class="user">
-          <h5 class="pull-left">
-            上传者：<%= project.user.stu_name %>
-          </h5>
-          <span>
-            <%= link_to like_project_path(project), method: :put, class: 'btn btn-default pull-right' do %>
-              <span class="glyphicon glyphicon-heart">
-                <%= project.cached_votes_up %>
-              </span>
-            <% end %>
-          </span>
-        </p>
-      </div>
-    </div>
-  <% end %>
-</div>
+<%= content_for :foot do %>
+  <%= javascript_include_tag 'project' %>
+  <script type="text/javascript">
+    $('.slideshow').each( function() {
+        var $slideshow = $(this);
+        $slideshow.imagesLoaded( function() {
+          $slideshow.skidder({
+            slideClass    : '.slide',
+            animationType : 'css',
+            scaleSlides   : true,
+            maxWidth : 1300,
+            maxHeight: 500,
+            paging        : true,
+            autoPaging    : true,
+            pagingWrapper : ".skidder-pager",
+            pagingElement : ".skidder-pager-dot",
+            swiping       : true,
+            leftaligned   : false,
+            cycle         : true,
+            jumpback      : false,
+            speed         : 400,
+            autoplay      : true,
+            autoplayResume: true,
+            interval      : 3000,
+            transition    : "slide",
+            afterSliding  : function() {},
+            afterInit     : function() {}
+          });
+        });
+    });
 
-<center>
-  <%= will_paginate @projects, renderer: BootstrapPagination::Rails, class: 'paginate', previous_label: h("previous"), next_label: h("next") %>
-</center>
-
-<script>
-  var slider = new IdealImageSlider.Slider({
-    selector: '#slider',
-    height: 400, // Required but can be set by CSS
-    interval: 4000
-  });
-  //slider.addCaptions();
-  slider.start();
-</script>
+    $(window).smartresize(function(){
+        $('.slideshow').skidder('resize');
+    });
+  </script>
+<% end %>
