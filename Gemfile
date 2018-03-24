@@ -14,14 +14,11 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer',  platforms: :ruby
 
 gem 'acts_as_votable', '~> 0.10.0'
-# gem 'bootstrap-sass', '~> 3.3.6'
 gem 'letter_opener'
-# gem 'masonry-rails', '~> 0.2.4'
 gem 'paperclip', '>= 5.2.0'
 gem 'semantic-ui-sass'
 # gem 'simple_form', '~> 3.2', '>= 3.2.1'
-gem 'will_paginate', '~> 3.0.6'
-# gem 'will_paginate-bootstrap'
+gem 'kaminari'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
@@ -42,13 +39,12 @@ group :development do
   gem 'capistrano-rails', '~> 1.3', require: false
   gem 'capistrano-rvm', require: false
   # gem 'capistrano-rbenv'
+  gem 'bootsnap', require: false
   gem 'bullet'
   gem 'rubocop', require: false
 end
 
-gem 'bootsnap', require: false
 gem 'listen'
+gem 'loofah', '>= 2.2.1'
 gem 'nokogiri', '>= 1.8.1'
 gem 'rails-html-sanitizer', '~> 1.0.3'
-# gem 'webpacker', '~> 3.3'
-gem 'loofah', '>= 2.2.1'
