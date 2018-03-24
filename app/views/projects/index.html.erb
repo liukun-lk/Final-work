@@ -8,39 +8,21 @@
   <% end %>
 </div>
 
-<%= content_for :foot do %>
-  <%= javascript_include_tag 'project' %>
-  <script type="text/javascript">
-    $('.slideshow').each( function() {
-        var $slideshow = $(this);
-        $slideshow.imagesLoaded( function() {
-          $slideshow.skidder({
-            slideClass    : '.slide',
-            animationType : 'css',
-            scaleSlides   : true,
-            maxWidth : 1300,
-            maxHeight: 500,
-            paging        : true,
-            autoPaging    : true,
-            pagingWrapper : ".skidder-pager",
-            pagingElement : ".skidder-pager-dot",
-            swiping       : true,
-            leftaligned   : false,
-            cycle         : true,
-            jumpback      : false,
-            speed         : 400,
-            autoplay      : true,
-            autoplayResume: true,
-            interval      : 3000,
-            transition    : "slide",
-            afterSliding  : function() {},
-            afterInit     : function() {}
-          });
-        });
-    });
+<div class="container clearfix">
+  <div class="gallery">
+    <% @projects.each do |project| %>
+      <div class="artwork small">
+        <%= link_to image_tag(project.image.url, alt: project.title), project, class: "preview" %>
+        <div class="extra">
+          <div class="caption"><%= project.title %></div>
+          <div class="timeago"><%= project.updated_at.strftime("%F") %></div>
+        </div>
+      </div>
+    <% end -%>
+  </div>
+</div>
+<div class="pagination wrapper">
+  <%= paginate @projects %>
+</div>
 
-    $(window).smartresize(function(){
-        $('.slideshow').skidder('resize');
-    });
-  </script>
-<% end %>
+<%= javascript_include_tag 'project' %>

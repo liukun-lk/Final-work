@@ -1,6 +1,7 @@
 //= require jquery
 //= require imagesloaded.min
 //= require jquery.skidder
+//= require jquery.lazyload.min
 
 (function($,sr){
 
@@ -30,3 +31,45 @@
   jQuery.fn[sr] = function(fn){  return fn ? this.bind('resize', debounce(fn)) : this.trigger(sr); };
 
 })(jQuery,'smartresize');
+
+$('.slideshow').each( function() {
+    var $slideshow = $(this);
+    $slideshow.imagesLoaded( function() {
+      $slideshow.skidder({
+        slideClass    : '.slide',
+        animationType : 'css',
+        scaleSlides   : true,
+        maxWidth : 1300,
+        maxHeight: 500,
+        paging        : true,
+        autoPaging    : true,
+        pagingWrapper : ".skidder-pager",
+        pagingElement : ".skidder-pager-dot",
+        swiping       : true,
+        leftaligned   : false,
+        cycle         : true,
+        jumpback      : false,
+        speed         : 400,
+        autoplay      : true,
+        autoplayResume: true,
+        interval      : 3000,
+        transition    : "slide",
+        afterSliding  : function() {},
+        afterInit     : function() {}
+      });
+    });
+});
+
+$(window).smartresize(function(){
+    $('.slideshow').skidder('resize');
+});
+$(".artwork .preview img").lazyload();
+$(".slideshow img").lazyload();
+
+$(".gallery div.artwork").each(function(){
+    let offsetHeight = $(this).find("a")[0].offsetHeight
+    let img = $(this).find("img")
+    let imgHeight = img[0].offsetHeight
+    let paddingPx = (offsetHeight - imgHeight) / 2
+    img.css("padding", `${paddingPx}px 0`)
+});
