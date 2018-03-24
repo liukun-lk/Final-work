@@ -15,6 +15,6 @@ class ApplicationController < ActionController::Base
   end
 
   def per
-    params[:per] || 10
+    params[:per] || 16
   end
 end
