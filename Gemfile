@@ -2,7 +2,7 @@ source 'https://gems.ruby-china.org'
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-gem 'rails', '5.2.0.rc2'
+gem 'rails', '5.2.0'
 
 gem 'devise', '>= 3.5.4'
 gem 'jbuilder', '~> 2.0'
