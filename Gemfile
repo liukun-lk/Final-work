@@ -1,4 +1,4 @@
-source 'https://gems.ruby-china.org'
+source 'https://gems.ruby-china.com'
 
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -47,4 +47,4 @@ end
 gem 'listen'
 gem 'loofah', '>= 2.2.1'
 gem 'nokogiri', '>= 1.8.1'
-gem 'rails-html-sanitizer', '~> 1.0.3'
+gem 'rails-html-sanitizer', '>= 1.0.4'
