@@ -65,11 +65,3 @@ $(window).smartresize(function(){
 });
 $(".artwork .preview img").lazyload();
 $(".slideshow img").lazyload();
-
-$(".gallery div.artwork").each(function(){
-    let offsetHeight = $(this).find("a")[0].offsetHeight
-    let img = $(this).find("img")
-    let imgHeight = img[0].offsetHeight
-    let paddingPx = (offsetHeight - imgHeight) / 2
-    img.css("padding", `${paddingPx}px 0`)
-});

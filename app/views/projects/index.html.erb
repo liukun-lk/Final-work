@@ -1,10 +1,10 @@
 <% content_for :head do %>
-  <%= stylesheet_link_tag    'project', media: "all" %>
+  <%= stylesheet_link_tag 'project', media: "all" %>
 <% end %>
 
 <div class="slideshow" style="height:0;margin-top:44px;overflow:hidden">
   <% @perfect.each do |per| %>
-    <%= content_tag(:div, link_to(image_tag(per.image.url), project_path(per.id)), class: 'slide') %>
+    <%= content_tag(:div, link_to(image_tag("#{per.image.url}?imageView2/0/format/webp/q/56"), project_path(per.id)), class: 'slide') %>
   <% end %>
 </div>
 
@@ -12,7 +12,7 @@
   <div class="gallery">
     <% @projects.each do |project| %>
       <div class="artwork small">
-        <%= link_to image_tag(project.image.url, alt: project.title), project, class: "preview" %>
+        <%= link_to image_tag("#{project.image.url}?imageView2/1/w/280/h/230/format/webp/q/57", alt: project.title), project, class: "preview" %>
         <div class="extra">
           <div class="caption"><%= project.title %></div>
           <div class="timeago"><%= project.updated_at.strftime("%F") %></div>

@@ -4,7 +4,7 @@ class ProjectsController < ApplicationController
   before_action :own_project, only: %i[edit update destroy]
 
   def index
-    @projects = Project.includes(:user).order(cached_votes_total: :desc).paginate(page: page).per_page(per)
+    @projects = Project.order(cached_votes_total: :desc).page(page).per(per)
     @perfect = Project.order(cached_votes_total: :desc).first(5)
   end
 
