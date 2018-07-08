@@ -14,8 +14,15 @@
       <div class="artwork small">
         <%= link_to image_tag("#{project.image.url}?imageView2/1/w/280/h/230/format/webp/q/57", alt: project.title), project, class: "preview" %>
         <div class="extra">
-          <div class="caption"><%= project.title %></div>
-          <div class="timeago"><%= project.updated_at.strftime("%F") %></div>
+          <div class="ui grid">
+            <div class="caption six wide column"><%= project.title %></div>
+            <div class="timeago caption five wide column"><%= project.updated_at.strftime("%Y/%m") %></div>
+            <div class="caption four wide column">
+              <%= link_to like_project_path(project), method: :put, class: 'btn btn-default pull-right' do %>
+                <i class="heart icon"><%= project.cached_votes_up %></i>
+              <% end %>
+            </div>
+          </div>
         </div>
       </div>
     <% end -%>

@@ -1,8 +1,11 @@
-<div class="row">
+<% content_for :head do %>
+  <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<% end %>
+<div class="row" style="margin-top: 44px;">
   <div class="col-md-8 col-md-offset-2">
     <div class="panel panel-default">
       <div class="panel-body ">
-        <%= image_tag @project.image.url, class: 'center-block' %>
+        <%= image_tag "#{@project.image.url}?imageView2/1/w/1200/h/800/format/webp/q/56", class: 'center-block', width: '800' %>
         <div class="col-md-8 col-md-offset-2">
           <h4>作品名称：<%= @project.title %></h4>
           <p>作品介绍：<%= @project.description %></p>
