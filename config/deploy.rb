@@ -8,6 +8,7 @@ set :rvm_ruby_version, '2.5.0'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
+set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 # Default deploy_to directory is /var/www/my_app_name
 set :deploy_to, '/var/www/final-work'
@@ -49,15 +50,6 @@ namespace :deploy do
   end
 end
 
-task :get_passenger_instance_name do
-  on roles(:app) do
-    set :passenger_instance_name, capture(:"/usr/sbin/passenger-status || true").scan(/(\w{8})\s+\d{4}/).flatten[0]
-  end
-end
-
-set :passenger_restart_command, -> { "passenger-config restart-app --instance #{fetch(:passenger_instance_name)}" }
-
-before :deploy, :get_passenger_instance_name
-
+set :passenger_restart_command, 'passenger-config restart-app'
 set :passenger_restart_with_sudo, false
 set :passenger_stat_throttle_rate, 0 # for v5.x
