@@ -18,8 +18,8 @@ gem 'letter_opener'
 gem 'paperclip', '>= 5.2.0'
 gem 'semantic-ui-sass'
 # gem 'simple_form', '~> 3.2', '>= 3.2.1'
-gem 'kaminari'
 gem 'bootsnap', require: false
+gem 'kaminari'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
